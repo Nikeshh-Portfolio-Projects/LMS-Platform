@@ -27,8 +27,7 @@ export const getCourses = async ({
       where: {
         isPublished: true,
         title: {
-          contains: title,
-          mode: 'insensitive',
+          contains: title
         },
         category: {
           id: categoryId,
